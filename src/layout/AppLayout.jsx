@@ -10,11 +10,11 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setIsDeleteMenu, setIsMobile, setIsNewMessageAlert, setIsSelectDeletedChat } from '../redux/misc';
 import { useErrors, useSocketEvents } from '../hooks/hooks';
 import { getSocket } from '../socket';
-import { NEW_MESSAGE_ALERT, NEW_REQUEST, REFETCH_DATA } from '../constants/event';
+import { NEW_MESSAGE_ALERT, NEW_REQUEST, ONLINE_USER, REFETCH_DATA } from '../constants/event';
 import { incrementNotification } from '../redux/api/chat';
 import { getOrSaveFromStorage } from '../libs/FileFormat';
 import DeleteChat from '../dialogue/DeleteChat';
-import { ONLINE_USER } from '../../../../server/constants/events';
+
 
 const AppLayout = (WrappedComponent) => {
   return (props) => {

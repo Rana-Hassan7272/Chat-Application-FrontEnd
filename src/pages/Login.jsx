@@ -46,7 +46,7 @@ export default function Login() {
       dispatch(userExist(data.user));
       toast.success(data.message,{id:toastId});
     } catch (error) {
-      toast.error(error?.response?.data?.message || "Something wents wrong");
+      toast.error(error?.response|| "Something wents wrong");
     }
     finally{
       setIsLoading(false)
@@ -71,7 +71,7 @@ export default function Login() {
       dispatch(userExist(data.user));
       toast.success(data.message,{id:toastId});
     } catch (error) {
-      toast.error(error?.response?.data?.message || "Something went wrong");
+      toast.error(error?.response?.data?.message || "Something wented wrong");
     }
     finally{
       setIsLoading(false)
